@@ -1,0 +1,4 @@
+# git ignore list
+
+# ignore all data at directory named data
+data/
