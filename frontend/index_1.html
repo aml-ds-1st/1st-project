@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>Google Maps API 예제</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY"></script>
+    <script>
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById("map"), {
+          center: {lat: 36.3320322, lng: 127.4348186}, 
+          zoom: 17
+        });
+        
+        var line = new google.maps.Polyline({
+          path: [
+          {lat: 36.3320322, lng: 127.4348186}, 
+          {lat: 36.3406885, lng: 127.4300156}, 
+          {lat: 36.3564762, lng: 127.4169606}, 
+          {lat: 36.3790822, lng: 127.4231993}, 
+          {lat: 36.3840738, lng: 127.4144574}, 
+          {lat: 36.4135899, lng: 127.4263262}, 
+          {lat: 36.4219238, lng: 127.4203743}, 
+          {lat: 36.4462021, lng: 127.4293618}, 
+          {lat: 36.4672768, lng: 127.4215844}, 
+          {lat: 36.4776606, lng: 127.4223021}, 
+          {lat: 36.4870686, lng: 127.4217012}, 
+          {lat: 36.4913318, lng: 127.4043416}, 
+          {lat: 36.4958758, lng: 127.3942013}, 
+          {lat: 36.5035506, lng: 127.3866226}, 
+          {lat: 36.5130283, lng: 127.38368}, 
+          {lat: 36.522879, lng: 127.3738573}, 
+          {lat: 36.5308064, lng: 127.3726083}, 
+          {lat: 36.5356712, lng: 127.3509941}, 
+          {lat: 36.5607159, lng: 127.3220326}, 
+          {lat: 36.5911131, lng: 127.3014332}, 
+          {lat: 36.6338464, lng: 127.2882632}, 
+          {lat: 36.6638841, lng: 127.2536908}, 
+          {lat: 36.6583071, lng: 127.2186206}, 
+          {lat: 36.6768954, lng: 127.2057976}, 
+          {lat: 36.6876888, lng: 127.1663998}, 
+          {lat: 36.7074644, lng: 127.1511701}, 
+          {lat: 36.7257227, lng: 127.1569655}, 
+          {lat: 36.7432206, lng: 127.1405228}, 
+          {lat: 36.7724583, lng: 127.1407372}, 
+          {lat: 36.7945866, lng: 127.1479049}, 
+          {lat: 36.8110192, lng: 127.1473535}
+
+          ],
+          strokeColor: "#FF0000",
+          strokeOpacity: 1.0,
+          strokeWeight: 2
+        });
+        
+        line.setMap(map);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="map" style="height: 900px; width: 1700px; margin: 0 auto;"></div>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_1dcaGzfpGgEBQHu_RKpe25YOHobpijI&callback=initMap"></script>
+  </body>
+
+  
+  <body> 
+    <h1 id="number">Random Number: {{ number }}</h1>  
+  </body>
+
+</html>
